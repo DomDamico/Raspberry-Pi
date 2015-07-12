@@ -15,5 +15,10 @@
       </div>
       {{ person }}
     </div>
+    <div ng-controller="PlayerController">
+      <button ng-click="play()" class="button" ng-show="!playing">Play</button>
+      <button ng-click="stop()" class="button alert" ng-show="playing">Stop</button>
+      Playing audio: <b>{{ playing }}</b>
+    </div>
   </body>
 </html>
